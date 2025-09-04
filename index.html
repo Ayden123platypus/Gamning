@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Games Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Unblocked Games Hub</h1>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for games...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="active" data-filter="all">All Games</li>
+            <li data-filter="flash">Flash Games</li>
+            <li data-filter="retro">Retro Games</li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="games-grid" id="games-grid">
+            <!-- Game cards will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>Unblocked Games Hub &copy; 2025</p>
+    </footer>
+
+    <!-- Ruffle and EmulatorJS will be loaded dynamically -->
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script src="script.js"></script>
+</body>
+</html>
